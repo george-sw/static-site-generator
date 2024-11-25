@@ -6,9 +6,7 @@ class HTMLNode:
         self.props = props
 
     def to_html(self):
-        raise NotImplementedError(
-            "Child classes will override this method to render themselves as HTML."
-        )
+        raise NotImplementedError("children will update this method to render as html")
 
     def props_to_html(self):
         prop_string = ""
